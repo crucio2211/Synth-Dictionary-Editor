@@ -71,7 +71,7 @@ Dictionary files follow the pattern: **`<langcode><type>.dic`**
 
 ---
 
-## Phoneme Quick Reference
+## Phoneme Quick Reference (American English / enu)
 
 Entries can use two pronunciation formats:
 
@@ -83,23 +83,43 @@ OMG    oh em jee
 NVDA   en vee dee ay
 ```
 
-### Phoneme String
+### Phoneme String (SPR)
 Wrap phoneme symbols in `` `[...] `` for precise phonetic control.
 
 ```
-hello    `[.1hE.0lo]
-computer `[k@m.1pyu.0ter]
+though       `[.1Do]
+shocking     `[.1Sa.0kIG]
+construction `[kXn1strHkSXn]
+hello        `[h.1E.0lo]
+writer       `[.1rY.0FR]
 ```
 
-**Stress markers:** `.1` = primary, `.2` = secondary, `.0` = unstressed
+**Stress markers:** `1` = primary, `2` = secondary, `0` = no stress, `.` = syllable boundary
 
-**Key vowels:** `A` (father), `a` (cat), `E` (bed), `I` (bit), `i` (beat), `O` (bought), `U` (book), `u` (boot), `@` (schwa)
+**Regular vowels:**
 
-**Key consonants:** `C` (ch), `D` (voiced th), `G` (ng), `J` (j/dge), `S` (sh), `T` (voiceless th), `Z` (zh/measure), `x` (loch)
+| Symbol | Example |
+|---|---|
+| `a` | f**a**ther, l**o**t |
+| `A` | b**a**ck, h**a**d |
+| `e` | c**a**ke, p**ai**n |
+| `E` | h**e**dge, l**e**t |
+| `i` | s**ee**, sp**ea**k |
+| `I` | p**i**ck, **i**ll |
+| `o` | b**o**th, **oa**k |
+| `c` | l**aw**, c**ough** |
+| `u` | z**oo**, tr**u**th |
+| `U` | t**oo**k, p**u**t |
+| `H` | b**u**t, m**u**g, s**o**n |
+| `R` | butt**er**, h**ur**t |
 
-See the full phoneme reference in the add-on's help file (NVDA Add-on Manager → Help).
+**Diphthongs:** `O` (t**oi**l), `W` (**ou**t), `Y` (l**i**fe)
 
----
+**Reduced vowels:** `x` (sof**a**, al**o**ne), `X` (ros**e**s, conn**e**ct)
+
+**Key consonants:** `D` (voiced th), `T` (voiceless th), `Z` (mea**s**ure), `S` (**sh**ip), `J` (**J**ane), `C` (**ch**ip), `G` (si**ng**), `F` (flap — wri**t**er), `N` (syllabic nasal — but**ton**), `?` (glottal stop — kit**t**en), `M` (h**mmm**)
+
+> **Note:** `x` and `X` are reduced vowels, not consonants. Other languages (British English, German, French, etc.) have their own SPR symbol sets — refer to the IBM TTS API Reference for details.
 
 ## Online Dictionary Sources
 
