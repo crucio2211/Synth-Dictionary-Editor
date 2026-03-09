@@ -125,7 +125,7 @@ The built-in update feature pulls from:
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+GNU General Public License v2.0 — see [LICENSE](LICENSE) for details.
 
 ---
 
